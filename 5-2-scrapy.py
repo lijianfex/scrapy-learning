@@ -6,6 +6,7 @@ Created on Fri Jul 27 22:55:15 2018
 """
 
 import scrapy
+import win32api
 
 class MofanSpider(scrapy.Spider):
     name = "mofan"
@@ -27,4 +28,4 @@ class MofanSpider(scrapy.Spider):
 
 
 # lastly, run this in terminal
-# scrapy runspider 5-2-scrapy.py -o res.json
+# scrapy runspider 5-2-scrapy.py -o res.json -s FEED_EXPORT_ENCODING=utf-8
